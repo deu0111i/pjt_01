@@ -14,11 +14,8 @@ for i in range(100):
         for row in reader:
             code = row['movieCd']
             result.append(code)
-
     key = config('API_KEY')
     movie_code = result[i]
-
-
     url = f'http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key={key}&movieCd={movie_code}'
     api_data = requests.get(url).json()
 

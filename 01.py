@@ -8,7 +8,7 @@ from pprint import pprint
 
 result = {}
 
-for i in range(50):
+for i in range(1):
 
 	#1-1. 필수요청 쿼리 준비(key, targetDt)
     key = config('API_KEY')
